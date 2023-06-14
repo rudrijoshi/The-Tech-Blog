@@ -1,0 +1,24 @@
+<div class="text-center">
+    <h2>Edit Post:</h2>
+    <form class="form comment-form">
+        <div class="form-group">
+            <label for="title-login">Title:{{blog.blog_name}}</label>
+            <input class="form-input" type="text" id="title-login" />
+        </div>
+        <div class="form-group">
+            <label for="content-login">Content: {{blog.description}}</label>
+            <input class="form-input" type="text" id="content-login" />
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit"><a href="/{{blog.id}}">
+                    Update post</a>
+            </button>
+        </div>
+        <div class="form-group">
+            <button class="btn btn-primary" type="submit"><a href="{{blog.id}}">Delete post</a>
+            </button>
+        </div>
+    </form>
+</div>
+
+<script src="./js/profile.js"></script>
