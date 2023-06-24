@@ -1,0 +1,82 @@
+:root {
+    --A: rgba(79, 6, 6, 0.998);
+    --B: rgb(165, 191, 100);
+    --C: rgb(17, 17, 1);
+}
+
+.flex-column {
+    min-height: 1036px;
+}
+
+.display-flex {
+    background-color: var(--A);
+    padding-left: 35px;
+    padding-top: 10px;
+    padding-bottom: 5px;
+
+}
+
+button {
+    background-color: var(--A);
+    padding-bottom: 5px;
+    margin: 10px;
+}
+
+.btn-sm {
+    color: var(--B);
+    text-decoration: none;
+}
+
+
+.title {
+    padding: 5px;
+    background-color: var(--B);
+    color: var(--A);
+    text-decoration: none;
+    font-size: 28px;
+    border-radius: 23px;
+}
+
+.flex-column {
+    background-color: var(--B);
+}
+
+.blog1 {
+    color: var(--B);
+    text-decoration: none;
+}
+
+.container1 {
+    padding: 5px 5px 5px 5px;
+    background-color: var(--A);
+
+}
+
+.project-blog {
+    text-decoration: none;
+    color: var(--B);
+}
+
+.desc {
+    color: var(--C);
+    font-size: small;
+
+    padding: 5px 5px 5px 5px;
+
+}
+
+.desc1 {
+    margin-bottom: 0px;
+    background-color: var(--B);
+}
+
+.container3 {
+    background-color: var(--A);
+    color: var(--B);
+    padding: 5px 5px 5px 5px;
+    min-height: 576px;
+}
+
+.link {
+    color: var(--B);
+}

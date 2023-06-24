@@ -10,20 +10,26 @@ router.post('/', withAuth, async (req, res) => {
         });
         res.status(200).json(newBlog);
     } catch (err) {
+        console.log(err);
         res.status(400).json(err);
     }
 });
 
 router.put('/:id', withAuth, async (req, res) => {
     try {
-        const newBlog = await Blog.update({
-            ...req.body,
-            user_id: req.session.user_id,
-        });
+        const newBlog = await Blog.update(
+            req.body,
+            {
+                where: {
+                    id: req.params.id,
+                }
+            }
+        );
 
         res.status(200).json(newBlog);
     } catch (err) {
-        res.status(400).json(err);
+        console.log(err.message);
+        res.status(400).json(err.message);
     }
 });
 
@@ -42,8 +48,10 @@ router.delete('/:id', withAuth, async (req, res) => {
             return;
         }
 
-        res.status(200).json(projectData);
+        res.status(200).json(blogData);
+        console.log(blogData);
     } catch (err) {
+        console.log(err.message);
         res.status(500).json(err);
     }
 });

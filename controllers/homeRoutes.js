@@ -93,4 +93,20 @@ router.get('/signup', (req, res) => {
   res.render('signup');
 });
 
+router.get('/edit/:id', async (req, res) => {
+  // If the user is already logged in, redirect the request to another route
+  try {
+    const userData = await Blog.findByPk(req.params.id, {
+    });
+
+    const blog = userData.get({ plain: true });
+
+    res.render('edit', {
+      ...blog,
+      logged_in: req.session.logged_in
+    });
+  } catch (err) {
+    res.status(500).json(err);
+  }
+});
 module.exports = router;

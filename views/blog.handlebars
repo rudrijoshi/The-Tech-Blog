@@ -1,26 +1,29 @@
 <div class="text-center">
     <h2>{{blog_name}}</h2>
     <p>{{description}}</p>
-    <p>Created by {{user.name}} on {{format_date date_created}}</p>
+    <p class="fw-bold">Created by {{user.name}} on {{format_date date_created}}</p>
 </div>
 <div class="text-center">
     <input type="hidden" value="{{id}}" />
-    <form class="form comment-form">
-        <div class="form-group">
-            <label for="comment-login">Comment:</label>
+    <form class="form comment-form col">
+        <div class="form-group row">
+            <label for="comment-login" class="fw-bold">Comment:</label>
             <textarea class="form-input" type="text" id="comment-login"></textarea>
         </div>
+        <br>
         <div class="form-group">
             <button class="btn btn-primary" type="submit">
                 Submit
             </button>
         </div>
     </form>
+    <br>
     {{#if comments}}
     <h2>Past Comments:</h2>
+    <br>
     {{#each comments as |comment|}}
     <div>{{comment.comment_desc}}</div>
-    <p>Created by: {{comment.user.name}} on {{format_date comment.date_created}}
+    <p class="fw-bold">Created by: {{comment.user.name}} on {{format_date comment.date_created}}
     </p>
     {{/each}}
     {{/if}}

@@ -8,21 +8,23 @@
   <div class="col-md-6">
     <h3>Create a New Post:</h3>
 
-    <form class="form new-blog-form">
-      <div class="form-group">
-        <label for="blog-name">Title:</label>
+    <form class="form new-blog-form col w-75">
+      <div class="form-group row ">
+        <label for="blog-name" class="fw-bold">Title:</label>
         <input class="form-input" type="text" id="blog-name" name="blog-name" />
       </div>
-      <div class="form-group">
-        <label for="blog-desc">Content:</label>
+      <div class="form-group row ">
+        <label for="blog-desc" class="fw-bold">Content:</label>
         <textarea class="form-input" id="blog-desc" name="blog-desc"></textarea>
       </div>
-      <div class="form-group">
+      <br>
+      <div class="form-group row">
         <button type="submit" class="btn btn-primary" id="form-submit">Create</button>
       </div>
     </form>
   </div>
 
+  {{!-- Here blogs refers to the homeRoutes blogs inside this route (router.get('/', async (req, res) ) --}}
   {{#if blogs.length}}
   <div class="col-md-6 blog-list">
     <h3>Current Projects:</h3>
@@ -30,15 +32,18 @@
     {{#each blogs as |blog|}}
     <div class="row mb-2">
       <div class="col-md-8">
-        <h4><a href="/blogs/{{blog.id}}">{{blog.blog_name}}</a></h4>
+        {{!-- Here blog refers to the homeRoutes inside this route (router.get('/blogs/:id', async (req, res)) --}}
+        <h4><a href="/edit/{{blog.id}}">{{blog.blog_name}}</a></h4>
       </div>
       <div class="col-md-4">
-        <button class="btn btn-sm btn-danger" data-id="{{blog.id}}">DELETE</button>
+        <button class="btn btn-sm btn-danger delete" data-id="{{blog.id}}">DELETE</button>
+        <a href="/edit/{{blog.id}}"><button class="btn btn-sm btn-danger" data-id="{{blog.id}}">UPDATE</button></a>
       </div>
     </div>
     {{/each}}
+
   </div>
   {{/if}}
 </div>
 
-<script src="/js/profile.js"></script>
+<script src="/js/dashboard.js"></script>
