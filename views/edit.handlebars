@@ -1,15 +1,16 @@
-<div class="text-center">
+<div class="trow ext-center">
     <h2>Edit Post:</h2>
-    <form class="form comment-form">
-        <div class="form-group">
-            <label for="title-login">Title:</label>
+    <form class="form comment-form col">
+        <div class="form-group row">
+            <label for="title-login" class="fw-bold">Title:</label>
             <input class="form-input" type="text" id="title-login" value="{{blog_name}}" />
         </div>
-        <div class="form-group">
-            <label for="content-login">Content: </label>
+        <div class="form-group row">
+            <label for="content-login" class="fw-bold">Content: </label>
             <textarea class="form-input" type="text" id="content-login">{{description}}</textarea>
         </div>
-        <div class="form-group">
+        <br>
+        <div class="form-group row">
             <button class="btn btn-primary" type="submit">
                 Update post
             </button>
