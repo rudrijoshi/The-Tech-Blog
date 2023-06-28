@@ -35,8 +35,8 @@ Seeding taken from repo link "https://github.com/femke77/seeds" by cloning to th
 
 ## Links
 
--URL link for the deployed Github application: https://rudrijoshi.github.io/SVGlogoproject1/
+-URL link for the deployed Github application: https://rudrijoshi.github.io/The-Tech-Blog-Project/
 
--URL link for the Github repository: https://github.com/rudrijoshi/SVGlogoproject1/
+-URL link for the Github repository: https://github.com/rudrijoshi/The-Tech-Blog-Project/
 
--URL of the functional, heroku deployed application.: https://watch.screencastify.com/v/mf7Vix9BMebWfAJxc2DF
+-URL of the functional, heroku deployed application.:
