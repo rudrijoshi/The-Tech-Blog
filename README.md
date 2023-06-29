@@ -6,7 +6,7 @@ The Tech Blog Project is an application that helps the developers to read and wr
 
 ## Technologies Used
 
--Handlebars.js
+- Handlebars.js
 - CSS
 - Javascript
 - MVC paradigm
