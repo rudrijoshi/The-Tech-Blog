@@ -35,8 +35,8 @@ Seeding taken from repo link "https://github.com/femke77/seeds" by cloning to th
 
 ## Links
 
--URL link for the deployed Github application: https://rudrijoshi.github.io/The-Tech-Blog-Project/
+-URL link for the deployed Github application: https://rudrijoshi.github.io/The-Tech-Blog/
 
--URL link for the Github repository: https://github.com/rudrijoshi/The-Tech-Blog-Project/
+-URL link for the Github repository: https://github.com/rudrijoshi/The-Tech-Blog/
 
 -URL of the functional, heroku deployed application.: https://thawing-harbor-85206-32f8ce9b795f.herokuapp.com/
